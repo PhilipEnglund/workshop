@@ -3,7 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useGetFilmsQuery } from "./api/client.ts";
 
-function App() {
+function Home() {
   const { isLoading, data } = useGetFilmsQuery();
 
   return (
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
