@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-types": "npx typed-openapi src/api/specs/studio-ghibli-openapi.yml -o ./src/api/ghibli.ts"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.17.9",
+    "@tanstack/react-query-devtools": "^5.17.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -22,6 +25,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "3.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
